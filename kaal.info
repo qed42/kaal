@@ -1,7 +1,7 @@
 	name = kaal
 	description = A three column theme
 	core = 6.x
-	engine = phptemplate
+	base theme = blueprint
 	
 	version = "6.14"
 	project = "Theme Development"
@@ -15,7 +15,7 @@
 	;regions[left] = Left sidebar
 	
 	;features definitions
-	features[] = logo
+	;features[] = logo
 	;features[] = name
 	;features[] = slogan
 	;features[] = mission
@@ -29,9 +29,9 @@
 	; features[] = secondary_links
 	
 	;stylesheets inclusion
-	stylesheets[screen, projector][] = bp/screen.css
-	stylesheets[screen, projector][] = bp/ie.css
-	stylesheets[print][] = bp/print.css
+	stylesheets[screen, projector][] = css/screen.css
+	stylesheets[screen, projector][] = css/ie.css
+	stylesheets[print][] = css/print.css
 	stylesheets[screen, projector][] = kaal.css
 	
 	;scripts inclusion

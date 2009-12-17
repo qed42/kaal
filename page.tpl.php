@@ -18,10 +18,10 @@
 	      <?php if ($logo || $site_slogan): ?>
 	        <div id="logo-title">
 	
-	          <?php if ($logo): ?>
-	            <div id="logo"><h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" id="logo-image" /></a></h1></div>
+	          <?php if ($logo && file_exists($logo)): ?>
+	            <div id="logo"><h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" id="logo-image" /></a></h1> &nbsp; &nbsp; <?php print $mission; ?></div>
 	          <?php else: ?>
-	          	<div id="logo"><h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><?php print $site_name; ?></a></h1></div>
+	          	<div id="logo"><h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><?php print $site_name; ?></a></h1> &nbsp; &nbsp; <?php print $mission; ?> </div>
 	          <?php endif; ?>
 	
 	          <?php if ($site_slogan): ?>
@@ -47,15 +47,14 @@
     </div></div> <!-- /#header-inner, /#header -->
 		
 		<div id="board" class="span-23 prepend-1 last">
-			<?php if ($primary_links): ?>
-        <div id="primary">
-          <?php print theme('links', $primary_links); ?>
+			  <div id="primary" class="span-19">  
+          <?php if ($primary_links): ?>
+            <?php print theme('links', $primary_links); ?>
+          <?php endif; ?>
         </div> <!-- /#primary -->
-      <?php endif; ?>
-      
-      <?php if ($mission): ?>
-        <div id="mission"><?php print $mission; ?></div>
-      <?php endif; ?>
+        <div class="span-3 last">
+          <div class="feed-icons"><?php print $feed_icons; ?></div>
+        </div>
 		</div>
 		
     <div id="main" class="span-24 last"><div id="main-inner" class="clear-block<?php if ($search_box || $primary_links || $secondary_links || $navbar) { print ' with-navbar'; } ?>">
@@ -79,10 +78,6 @@
         <div id="content-area">
           <?php print $content; ?>
         </div>
-
-        <?php if ($feed_icons): ?>
-          <div class="feed-icons"><?php print $feed_icons; ?></div>
-        <?php endif; ?>
 
         <?php if ($content_bottom): ?>
           <div id="content-bottom" class="region region-content_bottom">
@@ -129,7 +124,7 @@
       <?php endif; ?>
 			
     </div></div> <!-- /#main-inner, /#main -->
-
+    <div class="clear"></div>
     <?php if ($footer || $footer_message): ?>
       <div id="footer" class="span-24 last"><div id="footer-inner" class="region region-footer">
 
