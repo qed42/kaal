@@ -29,8 +29,8 @@
 	; features[] = secondary_links
 	
 	;stylesheets inclusion
-	stylesheets[screen, projector][] = css/screen.css
-	stylesheets[screen, projector][] = css/ie.css
+	stylesheets[screen][] = css/screen.css
+	stylesheets[screen][]  = css/ie.css
 	stylesheets[print][] = css/print.css
 	stylesheets[screen, projector][] = kaal.css
 	

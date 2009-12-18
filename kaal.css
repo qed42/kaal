@@ -11,6 +11,10 @@
 		line-height:20px;
 	}
 	
+	.sitename {
+	  font-size:30px;
+	}
+	
 	a:visited {color:#658a9b;}
 	
 	.submitted {
