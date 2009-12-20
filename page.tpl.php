@@ -17,15 +17,14 @@
 		  <div class="floatleft span-13">
 	      <?php if ($logo || $site_slogan): ?>
 	        <div id="logo-title">
-	
-	          <?php if ($logo && file_exists($logo)): ?>
-	            <div id="logo"><h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" id="logo-image" /></a></h1> &nbsp; &nbsp; <?php print $mission; ?></div>
+	          <?php if ($logo): ?>
+	            <div id="logo"><h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" id="logo-image" /></a></h1> &nbsp; &nbsp; <?php print $site_slogan; ?></div>
 	          <?php else: ?>
-	          	<div id="logo"><h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><?php print $site_name; ?></a></h1> &nbsp; &nbsp; <?php print $mission; ?> </div>
+	          	<div id="logo"><h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home"><?php print $site_name; ?></a></h1> &nbsp; &nbsp; <?php print $site_slogan; ?> </div>
 	          <?php endif; ?>
 	
-	          <?php if ($site_slogan): ?>
-	            <div id="site-slogan"><?php print $site_slogan; ?></div>
+	          <?php if ($mission): ?>
+	            <div id="mission"><b><?php print $mission; ?></b></div>
 	          <?php endif; ?>
 						
 	        </div> <!-- /#logo-title -->

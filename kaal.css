@@ -1,9 +1,7 @@
-	html,
-	body {
+	html,	body {
 		margin:0;
 		padding:0;
 		height:100%;
-		
 		margin:0px;
 		font-family:Verdana, Geneva, sans-serif;
 		font-size:12px;
@@ -15,7 +13,13 @@
 	  font-size:30px;
 	}
 	
-	a:visited {color:#658a9b;}
+	ul.pager a:hover {
+	  border:0;
+	}
+	
+	a:visited {
+	  color:#658a9b;
+	}
 	
 	.submitted {
 		color:#009900;
@@ -57,7 +61,6 @@
 		color:#000000;
 	}
 	
-	
 	.submitted a {
 		color:#5775b5;
 	}
@@ -86,6 +89,7 @@
 	#board a {
 		color:white;
 	}
+	
 	#board a:hover {
 		color:white;
 	}
@@ -133,12 +137,7 @@
 		text-align:right;
 	}
 	
-	.content ul {
-		
-	}
-	
 	.content ul li {
-		
 		list-style:url(images/tick.gif);
 		list-style-position:outside;
 		margin-left:0px;
@@ -191,7 +190,6 @@
 		background:url(images/1bgr_body_top.png) no-repeat;
 		padding:0 0 40px 0;
 		width:950px;
-		
 	}
 	
 	#footer {
