@@ -2,7 +2,7 @@
   
 	name = kaal
 	; sub theme of blueprint theme (drupal.org/project/blueprint)
-	description = A <a target="_blank" href="http://www.qed42.com">QED's</a>theme.Three column, tableless, fixed width, blueprint sub theme.
+	description = A <a target="_blank" href="http://www.qed42.com">QED's</a> theme. Three column, tableless, fixed width, blueprint sub theme.
 	core = 6.x
 	base theme = blueprint
 	
