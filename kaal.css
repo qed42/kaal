@@ -9,6 +9,17 @@
 		line-height:20px;
 	}
 	
+	a:focus, a:hover {color:#000;text-decoration:underline;}
+  a {color:#272F32;text-decoration:none;}
+  
+  h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+	h1 {font-size:24px;margin:5px 0;}
+	h2 {font-size:18px;margin:5px 0;}
+	h3 {font-size:16px;margin:5px 0;}
+	h4 {font-size:15px;margin:5px 0;}
+	h5 {font-size:14px;margin:5px 0;}
+	h6 {font-size:13px;margin:5px 0;}
+  
 	.sitename {
 	  font-size:30px;
 	}
@@ -111,6 +122,8 @@
 		color:white;
 	}
   
+  #search-theme-form input[type=text] {background-color:#000000;}
+  
   #search-theme-form input.form-text{
 	  border: 0;
 	  padding: 5px;
@@ -162,14 +175,17 @@
 		background: #080808;
 		letter-spacing:-1;
 		text-align:center;
-		padding-bottom:2px;
    	border: 0;
 		cursor: pointer; /* hand-shaped cursor */
    	width:60px;
    	font-weight:bold;
    	height:28px;
-   	vertical-align:bottom;
+   	vertical-align:middle;
 	}
+	
+	input[type=submit] {padding:0px;}
+	
+	
 	
 	.centeralign {
 		margin:30px 10px;
